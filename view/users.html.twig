@@ -1,0 +1,14 @@
+<div>
+    {% for user in allusers %}
+<div>
+<form action="delete_users" method="post">
+  <div class="container">
+    <button type="submit">Delete</button>
+    <label for="email"><b> {{user.get_email}} : </b></label>
+    <label for="password"><b> {{user.get_password}}</b></label>
+    <input  value="{{user.get_idUser}}" name="idUser" type="hidden">
+  </div>
+</form>
+</div>
+    {% endfor %}
+</div>

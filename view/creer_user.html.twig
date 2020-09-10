@@ -1,0 +1,22 @@
+{% if status == false %}
+<div>
+<form action="creer_user" method="post">
+  <div class="container">
+    <label for="email"><b>email</b></label>
+    <input type="email" placeholder="Enter email" name="email" required>
+
+    <label for="password"><b>password</b></label>
+    <input type="text" placeholder="Enter password" name="password" required>
+
+    <label for="confirm_password"><b>confirmation password</b></label>
+    <input type="text" placeholder="Enter confirm password" name="confirm_password" required>
+    <button type="submit">Créer user</button>
+  <p>{{message}}</p>
+  </div>
+</form>
+</div>
+{% else %}
+     <div>
+      {{message}}
+     </div>
+{% endif %}

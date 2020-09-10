@@ -1,0 +1,8 @@
+{% if status is not defined %}
+<p>Veuillez faire la selection d'un user</p>
+{% else %}
+<p> {{status}} :</p>
+{% if idUser is defined %}
+<p>l'offre numéro {{idUser}} est supprimée</p>
+{% endif %}
+{% endif %}
